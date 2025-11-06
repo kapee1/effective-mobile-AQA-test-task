@@ -90,19 +90,3 @@ docker build -t autotests .
 docker run --rm autotests
 ```
 
----
-
-## 4. Пример использования Allure с Docker
-
-Для сохранения отчёта на хосте:
-```bash
-docker run --rm -v ${PWD}/allure-results:/app/allure-results autotests
-```
-
----
-
-## 5. Ожидаемый результат
-
-- Проект успешно запускается локально и в Docker.  
-- Тесты корректно выполняются, формируя Allure-отчёт.  
-- Вся информация для установки и запуска содержится в README.md.
